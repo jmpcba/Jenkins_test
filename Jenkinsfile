@@ -1,4 +1,5 @@
 #!groovy
-sh '/test.py'
-
+String path = pwd()
+py = pwd + '/test.py'
+sh py
 
