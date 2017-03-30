@@ -1,2 +1,7 @@
 #!groovy
-echo "hellow pipelineworld"
+node{
+	stage{"test print to screen"}
+
+		echo "hellow pipelineworld"
+	}
+}
