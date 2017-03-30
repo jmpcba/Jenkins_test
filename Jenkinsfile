@@ -1,5 +1,4 @@
 #!groovy
-node{
-	sh /test.py
-}
+sh '/test.py'
+
 
