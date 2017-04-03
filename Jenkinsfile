@@ -1,8 +1,7 @@
 #!groovy
-node {
-	String path = pwd()
-	py = pwd + '/test.py'
-	println py
-	sh py
-}
+String path = pwd()
+py = pwd + '/test.py'
+println py
+sh py
+
 
