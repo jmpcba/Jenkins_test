@@ -4,7 +4,10 @@ pipeline{
 	stages{
 		stage('build'){
 			steps{
-				println "building on $env.BUILD_ID"
+				println "building $params.P1"
+				println "running on $env.BUILD_ID"
+				println "executig Python"
+				sh 
 			}		
 		}
 		
