@@ -4,7 +4,7 @@ pipeline{
 	stages{
 		stage('build'){
 			steps{
-				println "building"
+				println "building on $env.BUILD_ID"
 			}		
 		}
 		
