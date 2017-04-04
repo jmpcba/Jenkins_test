@@ -1,7 +1,7 @@
 #!groovy
 pipeline{
 	agent any //asigna un node y hace el scm checkout
-	checkout scm
+//	checkout scm
 	stages{
 		stage('build'){
 			steps{
