@@ -1,13 +1,14 @@
 #!groovy
 pipeline{
 	agent any //asigna un node y hace el scm checkout
+	checkout scm
 	stages{
 		stage('build'){
 			steps{
 				println "building $params.P1"
 				println "running on $env.BUILD_ID"
 				println "executig Python"
-				sh 
+				sh "python run.py"
 			}		
 		}
 		
@@ -23,6 +24,9 @@ pipeline{
 				println "deploying"
 			}
 		}
+	}
+	post{
+		println "anduvo como el choto"
 	}
 }
 
