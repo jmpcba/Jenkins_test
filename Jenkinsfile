@@ -26,7 +26,9 @@ pipeline{
 		}
 	}
 	post{
-		println "anduvo como el choto"
+		failure{
+			println "anduvo como el choto"
+		}
 	}
 }
 
