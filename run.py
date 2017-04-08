@@ -10,7 +10,7 @@ except FileNotFoundError as e:
 
 print "hello GIT"
 
-with open(file_path, 'w') as f
+with open(file_path, 'w') as f:
     for line in lines:
         f.write(line)
     
