@@ -5,7 +5,7 @@ lines = ['/usr/bin/python\n', '\n', 'print "este es un artefacto"']
 file_path = os.path.join(os.environ['WORKSPACE'],'artefacto.txt')
 try:
     os.remove(file_path)
-except FileNotFoundError as e:
+except OSError as e:
     print e.message
 
 print "hello GIT"
