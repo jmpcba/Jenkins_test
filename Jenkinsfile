@@ -14,10 +14,9 @@ pipeline {
           git(url: 'https://github.com/jmpcba/Jenkins_test.git', branch: '*/master')
         }
         
+        sh 'python run.py'
+        archiveArtifacts(artifacts: 'artefacto.py', onlyIfSuccessful: true)
       }
     }
-  }
-  environment {
-    var1 = 'value1'
   }
 }
