@@ -3,3 +3,4 @@
 print 'testing pipeline'
 
 # new line
+# more integration tests
